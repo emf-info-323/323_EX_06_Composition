@@ -4,7 +4,7 @@
 
 ## Objectifs
 
-- Entraîner la composition.
+-   Entraîner la composition.
 
 ## Rapports à produire
 
@@ -14,42 +14,36 @@ Observez avec attention [les données sur des examens réalisés](/src/ex06-data
 
 Ajouter la note obtenue à chaque étudiant en respectant l’**échelle fédérale** :
 
-- on divise le nombre de point obtenus par le nombre de points total de l’épreuve
-- on multiplie ce nombre par 5
-- on ajoute 1
-- on arrondit au demi-point
+-   on divise le nombre de point obtenus par le nombre de points total de l’épreuve
+-   on multiplie ce nombre par 5
+-   on ajoute 1
+-   on arrondit au demi-point
 
-Constituer le tableau HTML montrant les examens réalisés avec la note officielle. Vous devriez obtenir ceci :
+Constituer le tableau HTML montrant les examens réalisés avec la note officielle. **Utilisez les fonctions unaires (map, filtre, reduce, etc.) que vous connaissaisez pour faire cela**. Vous devriez obtenir ceci :
 
 <img src="res/C1.png" width="33%">
 
-## C2 - xxx
+## C2 - Calculer les notes fédérales des examens et les afficher (currying)
 
-Blabla :
+Refaire le même travail qu'au point 1 mais cette fois en utilisant la notion de **currying**. Déclarer impérativement une fonction **calculerNote** permettant d'établir la note d'un élève en fonction du nombre de points maximal et le nombre de point obtenus. Les fonctions déclarées doivent **unaires**, c'est à dire qu'elle doivent avoir un seul paramètre.
 
-```json
-```
+Utiliser ensuite cette fonction pour établir la liste des élèves avec leurs points et la note correspondande.
 
-## C3 - xxx
+Le tableau HTML montrant les examens réalisés avec la note officielle sera le même qu'au point 1.
 
-Blabla :
+<img src="res/C1.png" width="33%">
 
-```json
-```
+## C3 / C4 - Générateur de filtres par seuil
 
-## C4 - xxx
+Définir une fonction _closure_ appelée **makeFilterByMinLength** à qui l'on passe le nombre minimum de caractères qu'un mot doit contenir et qui retourne une fonction permettant de filtrer une liste de mots passée en paramètre en fonction du nombre minimal sauvegardé dans le contexte de la closure.
 
-Blabla :
+Sur la base de la closure **makeFilterByMinLength**, déclarer une fonction **filtreCourts** et **filtreLongs** permettant de considérer respectivement les mots de plus de 3 et 6 caractères.
 
-```json
-```
+Les boutons **C3 - Afficher les mots dont la longueur est supérieur à 3 caractère** et **C4 - Afficher les mots dont la longueur est supérieur à 6 caractère** permettront d'afficher les listes filtrées.
 
-## C5 - xxx
-
-Blabla :
-
-```json
-```
+<img src="res/C3.png" width="50%">
+<br>
+<img src="res/C4.png" width="50%">
 
 ---
 
